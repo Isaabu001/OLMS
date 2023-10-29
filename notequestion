@@ -1,0 +1,53 @@
+<li>
+              <div class="category-card">
+
+                <div class="card-icon">
+                  <ion-icon name="briefcase-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="6index.html">Agricultural Science</a>
+                  </h3>
+
+                  <span class="card-meta">Free</span>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+
+                <div class="card-icon">
+                  <ion-icon name="server-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="7index.html">Technology Sciences</a>
+                  </h3>
+
+                  <span class="card-meta">Free</span>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+
+                <div class="card-icon">
+                  <ion-icon name="medkit-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="8index.html">Art</a>
+                  </h3>
+
+                  <span class="card-meta">Free</span>
+                </div>
+
+              </div>
+            </li>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/codewithsadee/eduhome/259d3ddf823b971f85f9bad3a81d9a8e6967459d/favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="https://github.com/codewithsadee/eduhome/blob/master/assets/images/hero-banner.png?raw=true">
+  <link rel="preload" as="image" href="https://github.com/codewithsadee/eduhome/blob/master/assets/images/hero-abs-1.png?raw=true" media="min-width(768px)">
+  <link rel="preload" as="image" href="https://github.com/codewithsadee/eduhome/blob/master/assets/images/hero-abs-2.png?raw=true" media="min-width(768px)">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header style="background-color: rgb(255, 255, 255);">
+    <div class="container">
+
+      <h1>
+        <a href="#" class="logo">O.L.M.S</a>
+      </h1>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">O.L.M.S</a>
+
+          <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="home.html" class="navbar-link" data-nav-toggler >Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="about.html" class="navbar-link" data-nav-toggler>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="event.html" class="navbar-link" data-nav-toggler>Event</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="blog.html" class="navbar-link" data-nav-toggler>Blog</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="TEXTBOOK.html" class="navbar-link" data-nav-toggler>Textbook</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="contact.html" class="navbar-link" data-nav-toggler>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        
+
+        <a href="index.html" class="header-action-btn login-btn">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">Login / Register</span>
+        </a>
+
+        <button class="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home" aria-label="hero">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="section-subtitle" style="color: rgb(255, 255, 255);" >With O.L.M.S (Obokun Learning Management System)</p>
+
+            <p class="section-subtitle" style="color: rgb(255, 255, 255);" >Better Learning Future With Us</p>
+
+            <h2 class="h1 hero-title" style="color: rgb(255, 255, 255);" >Education Is About Academic Excellence</h2>
+
+            <p class="hero-text">
+              .
+            </p>
+
+            <a href="Gallary.html" class="btn btn-primary">
+              <span class="span">View</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+          
+
+        </div>
+      </section>
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+  <!-- 
+    - custom js link
+  -->
+  <script src="script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
+
+<style>
+  body {
+    background-image: url('https://guardian.ng/wp-content/uploads/2023/06/Tailored-For-Education-Nonprofit-Children-Education-Community-Writing-2880x1920-1-scaled-1-1424x802.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: background-image 1s;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+
+  
+</style>
+<script>
+  const backgroundImages = [
+    'https://championnews.com.ng/wp-content/uploads/2022/09/OSA6488-750x430.jpg',
+    'https://zoets.b-cdn.net/wp-content/uploads/2023/03/Key-Education-Statistics-for-Nigeria-1024x682.jpg',
+    'https://tkcdn.tekedia.com/wp-content/uploads/2020/05/06164633/school-students-960x450.png',
+    'https://www.brookings.edu/wp-content/uploads/2021/07/CUE_Nigeria_female_student.jpg',
+    'https://ntm.ng/wp-content/uploads/2021/01/GettyImages-1227893501.jpeg'
+  ];
+
+  let currentImageIndex = 0;
+
+  function changeBackgroundImage() {
+    document.body.style.backgroundImage = `url('${backgroundImages[currentImageIndex]}')`;
+    currentImageIndex = (currentImageIndex + 1) % backgroundImages.length;
+  }
+
+  setInterval(changeBackgroundImage, 5000); // Change the background image every 5 seconds (5000 milliseconds).
+</script>
