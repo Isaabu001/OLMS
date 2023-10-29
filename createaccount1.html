@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/codewithsadee/eduhome/259d3ddf823b971f85f9bad3a81d9a8e6967459d/favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="https://github.com/codewithsadee/eduhome/blob/master/assets/images/hero-banner.png?raw=true">
+  <link rel="preload" as="image" href="https://github.com/codewithsadee/eduhome/blob/master/assets/images/hero-abs-1.png?raw=true" media="min-width(768px)">
+  <link rel="preload" as="image" href="https://github.com/codewithsadee/eduhome/blob/master/assets/images/hero-abs-2.png?raw=true" media="min-width(768px)">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="#" class="logo">O.L.M.S</a>
+      </h1>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">O.L.M.S</a>
+
+          <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        
+
+      </nav>
+
+      <div class="header-actions">
+
+        
+
+        
+
+        <button class="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+          <br><br><br><br><br><br>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Account</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="button"] {
+      width: 100%;
+      padding: 10px;
+      background-color: hsl(235, 70%, 60%);
+      color: #090909;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      
+      height: 50px;
+    }
+
+    input[type="button"]:hover {
+      background-color: hsl(235, 70%, 60%);
+    }
+  </style>
+  <script>
+    function createAccount() {
+      var firstName = document.getElementById("firstName").value;
+      var lastName = document.getElementById("lastName").value;
+      var email = document.getElementById("email").value;
+
+      if (firstName === "" || lastName === "" || email === "") {
+        alert("Kindly fill the form.");
+      } else {
+        // Store user information (you can customize this part based on your needs)
+
+        // Redirect to signup.html
+        window.location.href = "index.html";
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <form>
+    <label for="firstName"><b style="font-size: larger;" ><h4 style="color:  #626a6a;">Create Account:</h4></b></label> <br>
+    <label for="firstName"  style="color:  #626a6a;" >First Name:</label>
+    <input type="text" id="firstName" required placeholder="First Name">
+
+    <label for="lastName"  style="color:  #626a6a;">Last Name:</label>
+    <input type="text" id="lastName" required placeholder="Last Name">
+
+    <label for="email"  style="color:  #626a6a;" >Email:</label>
+    <input type="email" id="email" required placeholder="Email@gmail.com">
+
+    <input type="button" value="Create Account" onclick="createAccount()"> <br><br><br>
+  
+    <label for="firstName"  style="color:  #626a6a;">Already have account? click <a href="index.html"><b style="color: hsl(235, 70%, 60%);">HERE</b></label>
+  </form>
+</body>
+</html>
+
+<!-- 
+  - custom js link
+-->
+<script src="script.js" defer></script>
+
+<!-- 
+  - ionicon link
+-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
