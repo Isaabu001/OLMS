@@ -105,105 +105,152 @@
 
   
 
-          <br><br><br><br><br><br>
+          <br><br><br><br><br>
 
 
 
 
-
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Create Account</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-    }
-
-    h1 {
-      text-align: center;
-    }
-
-    form {
-      max-width: 400px;
-      margin: 0 auto;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 10px;
-    }
-
-    input[type="text"],
-    input[type="email"] {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 20px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    input[type="button"] {
-      width: 100%;
-      padding: 10px;
-      background-color: hsl(235, 70%, 60%);
-      color: #090909;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      
-      height: 50px;
-    }
-
-    input[type="button"]:hover {
-      background-color: hsl(235, 70%, 60%);
-    }
-  </style>
-  <script>
-    function createAccount() {
-      var firstName = document.getElementById("firstName").value;
-      var lastName = document.getElementById("lastName").value;
-      var email = document.getElementById("email").value;
-
-      if (firstName === "" || lastName === "" || email === "") {
-        alert("Kindly fill the form.");
-      } else {
-        // Store user information (you can customize this part based on your needs)
-
-        // Redirect to signup.html
-        window.location.href = "signup.html";
-      }
-    }
-  </script>
-</head>
-<body>
-
-  <form>
-    <label for="firstName"><b style="font-size: larger;" ><h4 style="color:  #626a6a;">Create Account:</h4></b></label> <br>
-    <label for="firstName"  style="color:  #626a6a;" >First Name:</label>
-    <input type="text" id="firstName" required placeholder="First Name">
-
-    <label for="lastName"  style="color:  #626a6a;">Last Name:</label>
-    <input type="text" id="lastName" required placeholder="Last Name">
-
-    <label for="email"  style="color:  #626a6a;" >Email:</label>
-    <input type="email" id="email" required placeholder="Email@gmail.com">
-
-    <input type="button" value="Create Account" onclick="createAccount()"> <br><br><br>
-  
-    <label for="firstName"  style="color:  #626a6a;">Already have account click <a href="signup.html"><b style="color: hsl(235, 70%, 60%);">HERE</b></label>
-  </form>
-</body>
-</html>
-
+          <!DOCTYPE html>
+          <html>
+          <head>
+              <title>Create Account</title>
+              <style>
+                  body {
+                      font-family: Arial, sans-serif;
+                      background-color: #f1f1f1;
+                  }
+          
+                  h1 {
+                      text-align: center;
+                  }
+          
+                  form {
+                      max-width: 400px;
+                      margin: 0 auto;
+                      background-color: #fff;
+                      padding: 10px; /* Reduced padding */
+                      border-radius: 10px;
+                      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+                  }
+          
+                  label, input, select {
+                      display: block;
+                      margin-bottom: 5px; /* Reduced margin */
+                  }
+          
+                  input, select {
+                      width: 100%;
+                      padding: 8px; /* Reduced padding */
+                      font-size: 14px; /* Reduced font size */
+                      border: 1px solid #ccc;
+                      border-radius: 5px;
+                  }
+          
+                  input[type="submit"] {
+                      background-color: hsl(235, 70%, 60%);
+                      color: #fff;
+                      border: none;
+                      padding: 8px 16px; /* Reduced padding */
+                      border-radius: 5px;
+                      cursor: pointer;
+                  }
+          
+                  @media screen and (max-width: 600px) {
+                      form {
+                          padding: 5px; /* Reduced padding for smaller screens */
+                      }
+                  }
+              </style>
+          </head>
+          <body>
+              <h1>Create Account</h1>
+              <form id="registrationForm">
+                  <label for="firstName">First Name:</label>
+                  <input type="text" id="firstName" name="firstName" required>
+          
+                  <label for="lastName">Last Name:</label>
+                  <input type="text" id="lastName" name="lastName" required>
+          
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+          
+                  <label for="school">Select School:</label>
+                  <select id="school" name="school">
+                      <option value="IBOKUN GRAMMAR SCHOOL">IBOKUN GRAMMAR SCHOOL</option>
+                      <option value="IMESI ILE HIGH SCHOOL IMESI-ILE">IMESI ILE HIGH SCHOOL IMESI-ILE</option>
+                      <option value="IPETU ILE COMMUNITY GRAMMAR SCHOOL">IPETU ILE COMMUNITY GRAMMAR SCHOOL</option>
+                      <option value="ILARE COMMUNITY HIGH SCHOOL">ILARE COMMUNITY HIGH SCHOOL</option>
+                      <option value="ESA-OKE GRAMMAR SCHOOL">ESA-OKE GRAMMAR SCHOOL</option>
+                      <option value="IFELODUN COMMUNITY GRAMMAR SCHOOL KILORU">IFELODUN COMMUNITY GRAMMAR SCHOOL KILORU</option>
+                      <option value="ILUMEFA COMMUNITY HIGH SCHOOL IDOKO">ILUMEFA COMMUNITY HIGH SCHOOL IDOKO</option>
+                      <option value="ILASE COMMUNITY HIGH SCH ILASE">ILASE COMMUNITY HIGH SCH ILASE</option>
+                      <option value="LOCAL AUTHORITY GRAMMAR SCHOOL IBOKUN">LOCAL AUTHORITY GRAMMAR SCHOOL IBOKUN</option>
+                      <option value="ST JOSEPH CATHOLIC GRAMMAR SCHOOL ESA-OKE">ST JOSEPH CATHOLIC GRAMMAR SCHOOL ESA-OKE</option>
+                      <option value="COMMUNITY HIGH SCHOOL ILAHUN">COMMUNITY HIGH SCHOOL ILAHUN</option>
+                      <option value="COMMUNITY GRAMMAR SCHOOL ESA-ODO">COMMUNITY GRAMMAR SCHOOL ESA-ODO</option>
+                      <option value="IKINYINWA\/IPONDA GRAMMAR SCHOOL IKINYINWA">IKINYINWA\/IPONDA GRAMMAR SCHOOL IKINYINWA</option>
+                      <option value="COMMUNITY GRAMMAR SCHOOL OTAN-ILE">COMMUNITY GRAMMAR SCHOOL OTAN-ILE</option>
+                      <option value=" ADA OWODE COMMUNITY BAPTIST HIGH SCHOOL"> ADA OWODE COMMUNITY BAPTIST HIGH SCHOOL</option>
+                      <option value=" UNITY SCHOOL IMESI-ILE"> UNITY SCHOOL IMESI-ILE</option>
+                      <!-- Add more schools here -->
+                  </select>
+          
+                  <label for="class">Select Class:</label>
+                  <select id="class" name="class">
+                      <option value="Grade 7">Grade 7</option>
+                      <option value="Grade 8">Grade 8</option>
+                      <option value="Grade 9">Grade 9</option>
+                      <option value="Grade 10">Grade 10</option>
+                      <option value="Grade 11">Grade 11</option>
+                      <option value="Grade 12">Grade 12</option>
+                      <!-- Add more classes here -->
+                  </select>
+          
+          
+                  <label for="phoneNumber">Phone Number:</label>
+                  <input type="tel" id="phoneNumber" name="phoneNumber" required>
+          
+                  <label for="password">Password:</label>
+                  <input type="password" id="password" name="password" required>
+          
+                  <input type="button" value="Create Account" onclick="validateForm()" style="background-color: hsl(235, 70%, 60%);">
+                  <label for="firstName"  style="color:  #626a6a;">Already have account click <a href="signup.html"><b style="color: hsl(235, 70%, 60%);">HERE</b></label>
+              </form>
+          
+              <script>
+                  function validateForm() {
+                      const firstName = document.getElementById("firstName").value;
+                      const lastName = document.getElementById("lastName").value;
+                      const email = document.getElementById("email").value;
+                      const phoneNumber = document.getElementById("phoneNumber").value;
+                      const password = document.getElementById("password").value;
+          
+                      if (firstName === "" || lastName === "" || email === "" || phoneNumber === "" || password === "") {
+                          alert("PLEASE FILL THE NECESSARY INFORMATION");
+                      } else {
+                          // Redirect to signup.html (replace with your actual URL)
+                          window.location.href = "signup.html";
+                      }
+                  }
+              </script>
+          </body>
+          </html>
+          
+          
 <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
   <ion-icon name="arrow-up"></ion-icon>
 </a>
+<!-- 
+  - custom js link
+-->
+<script src="script.js" defer></script>
 
+<!-- 
+  - ionicon link
+-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+</body>
 
-
-
+</html>
