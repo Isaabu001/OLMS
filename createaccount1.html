@@ -126,6 +126,15 @@
                       padding: 8px 16px; /* Reduced padding */
                       border-radius: 5px;
                       cursor: pointer;
+                      width: 100%;
+                      height: 50px;
+                  }
+
+
+                  input[type="button"] {
+                    background-color:  hsl(235, 70%, 60%);
+                    color: #fff;
+
                   }
           
                   @media screen and (max-width: 600px) {
@@ -170,14 +179,15 @@
           
                   <label for="class">Select Class:</label>
                   <select id="class" name="class">
-                      <option value="Grade 7">Grade 7</option>
-                      <option value="Grade 8">Grade 8</option>
-                      <option value="Grade 9">Grade 9</option>
-                      <option value="Grade 10">Grade 10</option>
-                      <option value="Grade 11">Grade 11</option>
-                      <option value="Grade 12">Grade 12</option>
+                      <option value="Grade 7">JSS 1</option>
+                      <option value="Grade 8">JSS 2</option>
+                      <option value="Grade 9">JSS 3</option>
+                      <option value="Grade 10">SS 1</option>
+                      <option value="Grade 11">SS 2</option>
+                      <option value="Grade 12">SS 3</option>
                       <!-- Add more classes here -->
                   </select>
+          
           
                   <label for="phoneNumber">Phone Number:</label>
                   <input type="tel" id="phoneNumber" name="phoneNumber" required>
@@ -185,7 +195,7 @@
                   <label for="password">Password:</label>
                   <input type="password" id="password" name="password" required>
           
-                  <input type="button" value="Create Account" onclick="validateForm()" style="background-color: hsl(235, 70%, 60%);">
+                  <input type="button" value="Create Account" onclick="validateForm()" >
                   <label for="firstName"  style="color:  #626a6a;">Already have account click <a href="index.html"><b style="color: hsl(235, 70%, 60%);">HERE</b></label>
               </form>
           
